@@ -1,6 +1,6 @@
 .top{
     width: 100%;
-    height: 40px;
+    height: 60px;
     background-color: black;
     color: white;
     display: flex;
@@ -12,14 +12,17 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 40px auto;
+    
+    margin: 5% auto;
 }
 main{
     display: flex;
     width: 80%;
+    
     height: 500px;
     margin: auto;
     align-content: center;
+    flex-wrap: wrap;
     
 }
 .logo{
@@ -59,7 +62,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    width: 100%;
     margin: 50px auto;
     
 }
@@ -73,12 +76,14 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 15px;
+    width: 30vw;
+    height: 70vh;
 
 }
 
 .product img{
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    height: 90%;
     border: 2px solid black;
     margin: 10px;
 
@@ -161,4 +166,42 @@ footer h3{
 
 .social{
     width: 100%;
+}
+
+@media (width < 1000px) {
+    
+    main{
+        width: 90vw;
+        height: fit-content;
+       align-self: center;
+    }
+    .logo, .description{
+        width: 80vw;
+        height: 40vh;
+        margin: auto;
+    }
+
+    .links,.heading,.suscribe{
+        width: 80vh;
+        height: 30vh;
+        
+    }
+
+    .product{
+        width: 90vw;
+        height: 30vh;
+        margin: 50px auto;
+    }
+    footer{
+        flex-wrap: wrap;
+     }
+     a,p{
+         font-size: 50px !important;
+     }
+
+     h3, h1,h2{
+         font-size: 70px !important;
+     }
+
+    
 }
