@@ -169,7 +169,7 @@ footer h3{
     width: 100%;
 }
 
-@media (width < 1000px) {
+@media (width < 1200px) {
     
     main{
         width: 90vw;
