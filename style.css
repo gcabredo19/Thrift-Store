@@ -175,6 +175,7 @@ footer h3{
         width: 90vw;
         height: fit-content;
        align-self: center;
+       background-color: aqua;
     }
     .logo, .description{
         width: 80vw;
